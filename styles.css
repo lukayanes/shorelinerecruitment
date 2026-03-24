@@ -3613,3 +3613,12 @@ image below text
 .award-more:hover{
   text-decoration:underline;
 }
+
+.hero-content{
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.hero-split{
+  justify-content: center;
+}
