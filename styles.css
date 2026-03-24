@@ -3628,7 +3628,7 @@ image below text
   display: flex;
   justify-content: center;   /* centers horizontally */
   align-items: center;
-  gap: 40px;                /* space between items */
+  gap: 150px;                /* space between items */
   text-align: center;
 }
 
