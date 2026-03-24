@@ -3622,3 +3622,18 @@ image below text
 .hero-split{
   justify-content: center;
 }
+
+
+.trust-inner{
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;
+  gap: 40px;                /* space between items */
+  text-align: center;
+}
+
+.trust-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
