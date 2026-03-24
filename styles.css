@@ -1989,7 +1989,7 @@ select,
    FOOTER — SHOWER CO (COMPACT + ONE LINE)
 ================================ */
 :root{
-  --promo-blue: linear-gradient(135deg,#38bdf8,#0ea5e9);                 /* promo strip light blue */
+  --promo-blue: #F26A21;                 /* promo strip orange */
   --footer-purple: var(--purple);
 }
 
