@@ -175,9 +175,10 @@ requestAnimationFrame(() => {
 
       try {
         const response = await fetch(form.action, {
-          method: form.method,
-          body: formData
-        });
+        method: form.method,
+        body: formData,
+        mode: "cors"
+      });
 
         if (response.ok) {
           form.style.display = "none";
@@ -186,9 +187,9 @@ requestAnimationFrame(() => {
           submitting = false;
           alert("Something went wrong. Please try again or call us.");
         }
-      } catch {
-        submitting = false;
-        alert("Network error. Please try again.");
+      } catch (err) {
+        console.error("FETCH ERROR:", err);
+        alert("Network error");
       }
     });
   });
