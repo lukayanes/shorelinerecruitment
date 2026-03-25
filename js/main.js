@@ -167,31 +167,33 @@ requestAnimationFrame(() => {
     let submitting = false;
 
     form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      if (submitting) return;
-      submitting = true;
+  e.preventDefault();
 
-      const formData = new FormData(form);
+  const formData = new FormData(form);
 
-      try {
-        const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        mode: "cors"
-      });
+  console.log("FORM DATA:", [...formData.entries()]);
 
-        if (response.ok) {
-          form.style.display = "none";
-          thanks.style.display = "block";
-        } else {
-          submitting = false;
-          alert("Something went wrong. Please try again or call us.");
-        }
-      } catch (err) {
-        console.error("FETCH ERROR:", err);
-        alert("Network error");
-      }
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      mode: "cors"
     });
+
+    console.log("STATUS:", response.status);
+
+    if (response.ok) {
+      form.style.display = "none";
+      thanks.style.display = "block";
+    } else {
+      alert("Server error: " + response.status);
+    }
+
+  } catch (err) {
+    console.error("FETCH ERROR:", err);
+    alert("Network error");
+  }
+});
   });
 })();
 
