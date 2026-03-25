@@ -1682,10 +1682,7 @@ select,
 }
 
 
-/* HOW IT WORKS — gray TITLE */
-.how-it-works .about-title{
-  color: var(--gray);
-}
+
 
 @media (max-width: 900px){
   .project-row.project-3{
@@ -3677,7 +3674,3 @@ image below text
   max-height:none;
 }
 
-
-.how-it-works .about-title{
-  color: var(--gray, #0b1f33);
-}
