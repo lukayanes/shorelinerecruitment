@@ -902,7 +902,7 @@ height:320px;
 }
 
 .last-cta-photo{
-  background: url("/assets/herotest.webp") center/cover no-repeat;
+  background: url("./assets/shoreline-team.webp") center/cover no-repeat;
   filter: grayscale(15%);
 }
 
@@ -1003,7 +1003,7 @@ height:320px;
 .page-commercial-plumbing .about-split:first-of-type{
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("/assets/Sarasota_Hero.webp") center top / cover no-repeat;
+    url("./assets/Sarasota_Hero.webp") center top / cover no-repeat;
 }
 
 /* ---- Service page add-ons (scoped) ---- */
@@ -2354,7 +2354,7 @@ GOOGLE REVIEWS SECTION
 .reviews-bg{
   position: absolute;
   inset: 0;
-  background: url("assets/stlskyline.webp") center / cover no-repeat;
+  background: url("assets/Sarasota_Hero.webp") center / cover no-repeat;
   z-index: 1;
 }
 
