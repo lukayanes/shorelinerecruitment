@@ -3637,3 +3637,11 @@ image below text
   flex-direction: column;
   align-items: center;
 }
+
+
+.trust-item img{
+  height: 60px;     /* controls size */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
