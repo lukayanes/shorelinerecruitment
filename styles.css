@@ -3766,7 +3766,16 @@ image below text
 
 }
 
-
 .cta-purple{
   color:#00A99D;
+}
+
+
+@media (max-width:768px){
+
+  .last-cta-grid{
+    display:flex;
+    flex-direction:column-reverse;
+  }
+
 }
