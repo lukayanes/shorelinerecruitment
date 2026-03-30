@@ -4211,3 +4211,160 @@ image below text
     grid-column:auto;
   }
 }
+
+
+.deliver-section{
+  padding:120px 0;
+  background:#fff;
+}
+
+.deliver-intro-line{
+  font-size:22px;
+  line-height:1.5;
+  font-weight:700;
+  color:#0b1f44;
+  max-width:900px;
+  margin:28px 0 16px;
+}
+
+.deliver-intro-body{
+  font-size:17px;
+  line-height:1.8;
+  color:#4b5563;
+  max-width:820px;
+  margin:0 0 56px;
+}
+
+.deliver-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:28px;
+}
+
+.deliver-card{
+  position:relative;
+  min-height:340px;
+  border-radius:28px;
+  overflow:hidden;
+  text-decoration:none;
+  background-image:var(--bg);
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:flex-end;
+  box-shadow:0 12px 35px rgba(0,0,0,.08);
+  transition:.3s ease;
+}
+
+.deliver-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(11,31,68,.92) 0%, rgba(11,31,68,.78) 40%, rgba(11,31,68,.18) 100%);
+}
+
+.deliver-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 45px rgba(0,0,0,.14);
+}
+
+.deliver-card-overlay{
+  position:relative;
+  z-index:2;
+  width:100%;
+  padding:34px;
+}
+
+.deliver-card h3{
+  margin:0 0 10px;
+  font-size:32px;
+  line-height:1.1;
+  color:#fff;
+}
+
+.deliver-sub{
+  margin:0;
+  font-size:15px;
+  line-height:1.7;
+  color:rgba(255,255,255,.9);
+  font-style:italic;
+}
+
+.deliver-line{
+  width:70px;
+  height:3px;
+  background:#fff;
+  margin:20px 0 20px;
+  border-radius:999px;
+}
+
+.deliver-roles{
+  margin:0;
+  font-size:15px;
+  line-height:1.8;
+  color:rgba(255,255,255,.95);
+}
+
+.deliver-bottom-note{
+  margin-top:42px;
+  padding-top:32px;
+  border-top:1px solid #e5e7eb;
+  font-size:17px;
+  line-height:1.8;
+  color:#4b5563;
+  max-width:900px;
+}
+
+@media (max-width:991px){
+
+  .deliver-section{
+    padding:90px 0;
+  }
+
+  .deliver-grid{
+    grid-template-columns:1fr;
+  }
+
+  .deliver-card{
+    min-height:320px;
+  }
+
+  .deliver-card h3{
+    font-size:28px;
+  }
+}
+
+@media (max-width:767px){
+
+  .deliver-section{
+    padding:80px 0;
+  }
+
+  .deliver-intro-line{
+    font-size:19px;
+  }
+
+  .deliver-intro-body,
+  .deliver-bottom-note{
+    font-size:15px;
+    line-height:1.8;
+  }
+
+  .deliver-card{
+    min-height:300px;
+    border-radius:22px;
+  }
+
+  .deliver-card-overlay{
+    padding:26px;
+  }
+
+  .deliver-card h3{
+    font-size:24px;
+  }
+
+  .deliver-sub,
+  .deliver-roles{
+    font-size:14px;
+  }
+}
