@@ -4843,3 +4843,48 @@ image below text
     font-size:16px;
   }
 }
+
+.contact-info-card h3{
+  color:#00A99D;
+}
+
+.contact-info-card a:hover{
+  color:#00A99D;
+}
+
+.contact-help-list li:before{
+  color:#00A99D;
+}
+
+.contact-info-card{
+  border:1px solid rgba(0,169,157,.08);
+}
+
+.contact-page-form-card{
+  border:1px solid rgba(0,169,157,.08);
+}
+
+.contact-page-form input,
+.contact-page-form textarea{
+  color:#1f2430;
+}
+
+.contact-page-form input::placeholder,
+.contact-page-form textarea::placeholder{
+  color:#7b8190;
+  opacity:1;
+}
+
+.contact-page-form input:focus,
+.contact-page-form textarea:focus{
+  border-color:#00A99D;
+  box-shadow:0 0 0 4px rgba(0,169,157,.12);
+}
+
+.contact-page-form button{
+  background:#00A99D;
+}
+
+.contact-page-form button:hover{
+  background:#008d83;
+}
