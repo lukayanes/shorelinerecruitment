@@ -310,3 +310,30 @@ document.querySelectorAll(".mm-toggle").forEach(button => {
   });
 
 });
+
+// FAQ ACCORDION
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const faqItem = button.parentElement;
+    const answer = faqItem.querySelector('.faq-answer');
+    const icon = button.querySelector('.faq-icon');
+
+    document.querySelectorAll('.faq-item').forEach(item => {
+      if (item !== faqItem) {
+        item.classList.remove('active');
+        item.querySelector('.faq-answer').style.display = 'none';
+        item.querySelector('.faq-icon').textContent = '+';
+      }
+    });
+
+    if (faqItem.classList.contains('active')) {
+      faqItem.classList.remove('active');
+      answer.style.display = 'none';
+      icon.textContent = '+';
+    } else {
+      faqItem.classList.add('active');
+      answer.style.display = 'block';
+      icon.textContent = '−';
+    }
+  });
+});
