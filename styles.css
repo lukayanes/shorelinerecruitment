@@ -4988,3 +4988,22 @@ image below text
     font-size:20px;
   }
 }
+
+
+.payer-panel{
+  background-image:
+    linear-gradient(rgba(7,20,32,.55), rgba(7,20,32,.55)),
+    url('./assets/payer-tech.webp');
+}
+
+.provider-panel{
+  background-image:
+    linear-gradient(rgba(7,20,32,.55), rgba(7,20,32,.55)),
+    url('./assets/provider-tech.webp');
+}
+
+.government-panel{
+  background-image:
+    linear-gradient(rgba(7,20,32,.55), rgba(7,20,32,.55)),
+    url('./assets/government-healthcare.webp');
+}
