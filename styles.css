@@ -5007,3 +5007,90 @@ image below text
     linear-gradient(rgba(7,20,32,.55), rgba(7,20,32,.55)),
     url('./assets/government-healthcare.webp');
 }
+
+
+.industries-overview{
+  padding:100px 0;
+  background:#fff;
+}
+
+.industries-intro{
+  max-width:900px;
+  margin:0 auto 50px;
+  text-align:center;
+}
+
+.industries-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:28px;
+}
+
+.industry-card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:24px;
+  overflow:hidden;
+  text-decoration:none;
+  color:#071420;
+  transition:.3s ease;
+  box-shadow:0 12px 30px rgba(7,20,32,.08);
+}
+
+.industry-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 45px rgba(7,20,32,.14);
+}
+
+.industry-card-image{
+  height:240px;
+  background-size:cover;
+  background-position:center;
+}
+
+.industry-card-content{
+  padding:32px 28px;
+}
+
+.industry-card-kicker{
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.12em;
+  color:#5d6b79;
+  margin-bottom:14px;
+}
+
+.industry-card h3{
+  font-size:28px;
+  line-height:1.15;
+  margin-bottom:18px;
+  color:#071420;
+}
+
+.industry-card-text{
+  font-size:16px;
+  line-height:1.7;
+  color:#44505c;
+  margin-bottom:24px;
+}
+
+.industry-card-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#071420;
+}
+
+@media (max-width: 1024px){
+  .industries-grid{
+    grid-template-columns:1fr;
+  }
+
+  .industry-card-image{
+    height:220px;
+  }
+}
